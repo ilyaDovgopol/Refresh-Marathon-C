@@ -1,7 +1,7 @@
 void mx_printchar(char c);
 
 void mx_print_alphabet(void) {
-	for (char i = 0; i < 26; i++) {
+	for (int i = 0; i < 26; i++) {
 		if (i % 2 == 0) {
 			mx_printchar(i + 'A');
 		}

@@ -1,5 +1,5 @@
 int mx_factorial_iter(int n) {
-	int c = 1;
+	int i = 1;
 	int f = n;
 
 	if (n < 0 || n >= 13) {
@@ -8,9 +8,9 @@ int mx_factorial_iter(int n) {
 	if (n == 0) {
 		return 1;
 	}
-	while (c < n) {
-		f = f * c;
-		c++;
+	while (i < n) {
+		f = f * i;
+		i++;
 	}
 	return f;
 }

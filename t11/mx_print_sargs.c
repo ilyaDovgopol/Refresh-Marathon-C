@@ -16,10 +16,10 @@ int main(int c, char *v[]) {
 }
 
 static void sort(char *s[], int size) {
-	for (int i = 0; i < size; i++) {
+	for (int i = 0; i < size - 1; i++) {
 		int m = i;
 
-		for (int j = i; j < size; j++) {
+		for (int j = i + 1; j < size; j++) {
 			if (mx_strcmp(s[m], s[j]) > 0) {
 				m = j;
 			}

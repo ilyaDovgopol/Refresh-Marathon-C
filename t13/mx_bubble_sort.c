@@ -1,7 +1,7 @@
 int mx_strcmp(const char *s1, const char *s2);
 
 int mx_bubble_sort(char **arr, int size) {
-	if (!arr) {
+	if (!arr || !(*arr)) {
 		return 0;
 	}
 	int c = 0;

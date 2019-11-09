@@ -9,7 +9,7 @@ int mx_factorial_iter(int n) {
 		return 1;
 	}
 	while (i < n) {
-		f = f * i;
+		f *= i;
 		i++;
 	}
 	return f;

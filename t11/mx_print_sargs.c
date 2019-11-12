@@ -24,10 +24,10 @@ static void sort(char *s[], int size) {
 				max = j;
 			}
 		}
-		char *tmp = s[i];
+		char *swap = s[i];
 
 		s[i] = s[max];
-		s[max] = tmp;
+		s[max] = swap;
 	}
 }
 

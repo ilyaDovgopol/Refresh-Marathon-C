@@ -10,10 +10,10 @@ void mx_sort_arr_int(int *arr, int size) {
 				max = j;
 			}
 		}
-		int tmp = arr[i];
+		int swap = arr[i];
 
 		arr[i] = arr[max];
-		arr[max] = tmp;
+		arr[max] = swap;
 	}
 }
 

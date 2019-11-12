@@ -1,17 +1,17 @@
 int mx_factorial_iter(int n) {
 	int i = 1;
-	int f = n;
+	int fact = n;
 
-	if (n < 0 || n >= 13) {
+	if (n < 0 || n > 12) {
 		return 0;
 	}
 	if (n == 0) {
 		return 1;
 	}
 	while (i < n) {
-		f *= i;
+		fact *= i;
 		i++;
 	}
-	return f;
+	return fact;
 }
 

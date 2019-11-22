@@ -1,13 +1,12 @@
 int mx_strcmp(const char *s1, const char *s2);
 
 int mx_binary_search(char **arr, int size, const char *s, int *count) {
-	if (!arr || !(*arr) || !s || !(*s)) {
+	if (!arr || !(**arr) || !s) {
 		return -1;
 	}
 	int left = 0;
 	int right = size - 1;
 
-	*count = 0;
 	while (left <= right) {
 		(*count)++;
 		int mid = (left + right) / 2;

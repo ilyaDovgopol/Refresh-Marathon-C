@@ -5,17 +5,17 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
     int right = size - 1;
     int mid;
 
-    if (!arr || !(**arr) || !s) return -1;
+    if (!arr || !(**arr) || !s) {
+        return -1;
+    }
     *count = 0;
     while (left <= right) {
         (*count)++;
         mid = (left + right) / 2;
-        if (mx_strcmp(s, arr[mid]) > 0) {
+        if (mx_strcmp(s, arr[mid]) > 0)
             left = mid + 1;
-        }
-        else if (mx_strcmp(s, arr[mid]) < 0) {
+        else if (mx_strcmp(s, arr[mid]) < 0)
             right = mid - 1;
-        }
         else
             return mid;
     }

@@ -16,17 +16,15 @@ int main(int c, char *v[]) {
 }
 
 static void sort(char *s[], int size) {
-    int max;
-    char *swap;
-
     for (int i = 0; i < size - 1; i++) {
-        max = i;
+        int max = i;
+        char *swap = s[i];
+
         for (int j = i + 1; j < size; j++) {
             if (mx_strcmp(s[max], s[j]) > 0) {
                 max = j;
             }
         }
-        swap = s[i];
         s[i] = s[max];
         s[max] = swap;
     }

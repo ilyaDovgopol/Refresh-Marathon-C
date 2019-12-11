@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 char *mx_strnew(const int size) {
-    char *s = (char *) malloc((size + 1) * sizeof(char));
+    char *s = (char *)malloc((size + 1) * sizeof(char));
 
     if (size < 0) {
         return NULL;

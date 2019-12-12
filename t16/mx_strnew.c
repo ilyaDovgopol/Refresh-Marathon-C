@@ -1,5 +1,5 @@
-#include <stddef.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 char *mx_strnew(const int size) {
     char *s = (char *)malloc((size + 1) * sizeof(char));

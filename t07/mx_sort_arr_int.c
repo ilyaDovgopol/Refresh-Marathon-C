@@ -3,16 +3,16 @@ void mx_sort_arr_int(int *arr, int size) {
         return;
     }
     for (int i = 0; i < size - 1; i++) {
-        int max = i;
+        int min = i;
         int swap = arr[i];
 
         for (int j = i + 1; j < size; j++) {
-            if (arr[max] > arr[j]) {
-                max = j;
+            if (arr[min] > arr[j]) {
+                min = j;
             }
         }
-        arr[i] = arr[max];
-        arr[max] = swap;
+        arr[i] = arr[min];
+        arr[min] = swap;
     }
 }
 

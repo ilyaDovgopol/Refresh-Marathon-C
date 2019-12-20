@@ -1,5 +1,4 @@
 int mx_factorial_iter(int n) {
-    int i = 1;
     int fact = n;
 
     if (n < 0 || n > 12) {
@@ -8,9 +7,8 @@ int mx_factorial_iter(int n) {
     if (!n) {
         return 1;
     }
-    while (i < n) {
+    for (int i = 1; i < n; i++) {
         fact *= i;
-        i++;
     }
     return fact;
 }

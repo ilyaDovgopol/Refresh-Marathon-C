@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 char *mx_strnew(const int size) {
-    char *s;
+    char *s = NULL;
 
     if (size < 0) {
         return NULL;

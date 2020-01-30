@@ -3,9 +3,6 @@ void mx_printstr(const char *s);
 void mx_printchar(char c);
 
 int main(int c, char *v[]) {
-    if (c < 2) {
-        return 0;
-    }
     for (int i = 1; i < c - 1; i++) {
         int min = i;
         char *swap = v[i];

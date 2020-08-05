@@ -11,4 +11,3 @@ void mx_print_alphabet(void) {
     }
     mx_printchar('\n');
 }
-

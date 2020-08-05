@@ -12,4 +12,3 @@ int mx_factorial_iter(int n) {
     }
     return fact;
 }
-

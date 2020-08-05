@@ -15,4 +15,3 @@ void mx_sort_arr_int(int *arr, int size) {
         arr[min] = swap;
     }
 }
-

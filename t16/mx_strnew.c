@@ -16,4 +16,3 @@ char *mx_strnew(const int size) {
     }
     return s;
 }
-
